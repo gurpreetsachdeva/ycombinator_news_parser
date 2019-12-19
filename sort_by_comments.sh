@@ -1,0 +1,1 @@
+python3 news_parser.py sort_by_comments

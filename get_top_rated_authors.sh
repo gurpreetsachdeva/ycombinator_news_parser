@@ -1,0 +1,1 @@
+python3 news_parser.py get_top_rated_authors
