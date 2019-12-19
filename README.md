@@ -23,7 +23,11 @@ Issues Faced :
 
 Corner Cases Handled : 
 ==========================
-1. Comments not entered for a post.2. Parse all the pages for the websites, not just the first page.
+1. Comments not entered for a post.
+2. Parse all the pages for the websites, not just the first page.
+3. There are cases where author is also blank.So handle error for everything which can go wrong. , For e.g. Look at the image corner case 1 in screenshots folder.
+
+Account Executive for B2B Flying Autonomous Vehicle Software (Iris Automation) (irisonboard.com)
 
 Rough Design:
 =============================
