@@ -72,7 +72,7 @@ def extractRow(row):
         comments_count=int(comments_count)
     else:
         print("Comment count Blank For a row")
-    #print(rank,title,author,comments_count)
+    print(rank,title,author,comments_count)
     return Post(title, author, comments_count,rank)
         
 
@@ -97,6 +97,8 @@ def getAuthorKarmaFromName(name):
 def getTopRatedAuthor(authors):
     l=getTopRatedAuthors(authors)
     if(len(l)!=0):
+        print("Top Rated Author *************************")
+        print(l[0])
         return l[0]
     else:
         print("No Top Rated Author")
