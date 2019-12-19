@@ -14,7 +14,7 @@ Parser for parsing https://news.ycombinator.com
 Code Repository :https://github.com/gurpreetsachdeva/ycombinator_news_parser
 =================
 
-Screenshots Directory:https://github.com/gurpreetsachdeva/ycombinator_news_parser/screenshots
+Screenshots Directory:https://github.com/gurpreetsachdeva/ycombinator_news_parser/tree/master/screenshots
 ======================
 
 Issues Faced : 

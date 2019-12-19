@@ -118,10 +118,13 @@ posts=[]
 authors={}
 parseSite(posts,authors)
 if sys.argv[0]=="get_top_rated_author":
+    print("Top Rated Author \n")
     getTopRatedAuthor(authors)
 elif sys.argv[0]=="sort_by_comments":
+    print("Enter Sort By Comments Output \n")
     getPostByComments(posts)
 else:
+    print("Top Rated Authors\n")
     getTopRatedAuthors(authors)
 
     
