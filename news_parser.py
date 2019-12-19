@@ -104,7 +104,7 @@ def getTopRatedAuthor(authors):
 #Multiple Authors
 def getTopRatedAuthors(authors):
     l=authors.items()
-    l=sorted(l,key=lambda x:x[1])
+    l=sorted(l,key=lambda x:x[1],reverse=True)
     printPretty(l)
     return l
 def getPostByComments(posts):
@@ -117,10 +117,10 @@ def printPretty(posts):
 posts=[]
 authors={}
 parseSite(posts,authors)
-if sys.argv[0]=="get_top_rated_author":
+if sys.argv[1]=="get_top_rated_author":
     print("Top Rated Author \n")
     getTopRatedAuthor(authors)
-elif sys.argv[0]=="sort_by_comments":
+elif sys.argv[1]=="sort_by_comments":
     print("Enter Sort By Comments Output \n")
     getPostByComments(posts)
 else:
