@@ -89,7 +89,10 @@ def getAuthorKarmaFromName(name):
     resp=requests.get(url)
     if name=="" or resp.status_code!=200:
         #print("Inside Blank Name for author or Response Code not 200")
-        return Author("",0)
+        #return Author("",0)
+        #Get Through the API, URL Fetch is failing
+        r=requests.get("https://hacker-news.firebaseio.com/v0/user/"+name+"/karma.json")
+        return Author(name,int(r.text))
     author=Author(name,parseTopPage(resp))
     return author
 
