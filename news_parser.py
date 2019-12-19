@@ -87,12 +87,14 @@ def parseTopPage(resp):
 def getAuthorKarmaFromName(name):
     url="https://news.ycombinator.com/user?id="+name
     resp=requests.get(url)
-    if name=="" or resp.status_code!=200:
+    if name=="":
+        return Author(name,0)
+    if  resp.status_code!=200:
         #print("Inside Blank Name for author or Response Code not 200")
         #return Author("",0)
         #Get Through the API, URL Fetch is failing
         r=requests.get("https://hacker-news.firebaseio.com/v0/user/"+name+"/karma.json")
-        return Author(name,int(r.text))
+        return Author(name,int(r.text[karma]))
     author=Author(name,parseTopPage(resp))
     return author
 
