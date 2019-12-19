@@ -72,7 +72,7 @@ def extractRow(row):
         comments_count=int(comments_count)
     else:
         print("Comment count Blank For a row")
-    print(rank,title,author,comments_count)
+    #print(rank,title,author,comments_count)
     return Post(title, author, comments_count,rank)
         
 
